@@ -1,0 +1,159 @@
+.wrapper{
+  overflow-x: hidden;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.wrap-video{
+  position:relative;
+}
+
+.wrap-video video{
+  width: 100%;
+  height:100%;
+  pointer-events: none;
+  border-bottom-left-radius: 31%;
+  border-bottom-right-radius: 38%;
+}
+
+.wrap-video .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*上下左右中央寄せ*/
+  text-align:center;
+}
+
+.wrap-video .text p{
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+}
+
+.wrap-video .text .headline{
+  font-size:20px;
+}
+
+.navbar__img {
+  width: 150px;
+}
+
+/*--- 固定背景の画像 --*/
+.thai-image {
+  position: relative;
+  width: 100vw;
+  height: 60%;
+  margin: 0!important;
+}
+.thai-image-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.fixed-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  height: 100%;
+}
+
+.navbar-brand img{
+  width: 100px;
+}
+
+/* ノマド旅行プラン */
+@keyframes border-animation {
+  to { transform: rotate(360deg); }
+}
+
+.round1{
+  position: relative;
+  border-radius: 50% 70% 50% 70%/60% 50% 60% 60%;
+  mix-blend-mode: multiply;
+}
+.round2{
+  position: relative;
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  mix-blend-mode: multiply;
+}
+.round3{
+  position: relative;
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  mix-blend-mode: multiply;
+}
+
+.round1-color,.round2-color,.round3-color{
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 10%;
+  /* -webkit-transform: translate(10%, 0%);
+  transform: translate(10%, 0%); */
+  animation: border-animation 10s infinite linear;
+  z-index: -1;
+}
+
+.round1-color{
+  border-radius: 50% 70% 50% 70%/60% 50% 60% 60%;
+  background-color: #ff6666;
+}
+.round2-color{
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  background-color: #ff9922;
+}
+.round3-color{
+  border-radius: 60% 60% 70% 50%/60% 40% 60% 50%;
+  background-color: #ffcc22;
+}
+
+/* 期待できること */
+.hope-style{
+  background-color: #ffcc22;;
+}
+.merit-3{
+  font-size: 1.5rem;
+}
+
+/* お問い合わせ */
+.form-style{
+  background-color: #e0e0e0;
+}
+
+/* フッター */
+footer {
+  position: relative;
+}
+.footer-style{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
+  background-color: #000;
+  color: #ffffff;
+} 
+.footer-style p{
+  position: absolute;
+  bottom: 0
+}
