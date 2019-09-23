@@ -1,3 +1,12 @@
+/* サイズ調整 */
+.font-1{
+  font-size: 1.2rem;
+}
+.font-2{
+  font-size: 1.8rem;
+}
+.font-3{}
+
 .wrapper{
   overflow-x: hidden;
   font-size: 1.3rem;
@@ -38,7 +47,6 @@
 .navbar__img {
   width: 150px;
 }
-
 /*--- 固定背景の画像 --*/
 .thai-image {
   position: relative;
@@ -111,7 +119,7 @@
   /* -webkit-transform: translate(10%, 0%);
   transform: translate(10%, 0%); */
   animation: border-animation 10s infinite linear;
-  z-index: -1;
+  z-index: -5;
 }
 
 .round1-color{
@@ -156,4 +164,13 @@ footer {
 .footer-style p{
   position: absolute;
   bottom: 0
+}
+
+.return-text{
+  display: none;
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .return-text{
+    display: block;
+  }
 }
