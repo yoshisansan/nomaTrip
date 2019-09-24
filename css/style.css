@@ -124,15 +124,16 @@
 
 .round1-color{
   border-radius: 50% 70% 50% 70%/60% 50% 60% 60%;
-  background-color: #ff6666;
+  background-color: rgba(197, 56, 56, 0.3);
+  
 }
 .round2-color{
   border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
-  background-color: #ff9922;
+  background-color: rgba(190, 197, 86, 0.3);
 }
 .round3-color{
   border-radius: 60% 60% 70% 50%/60% 40% 60% 50%;
-  background-color: #ffcc22;
+  background-color: rgba(187, 101, 43, 0.3);
 }
 
 /* 期待できること */
@@ -173,4 +174,8 @@ footer {
   .return-text{
     display: block;
   }
+  .form-adjust{
+    margin-bottom: 50px;
+  }
+
 }
